@@ -1,7 +1,7 @@
 import '../../Styles/Home.css'
 import {GenericSession} from "../../Components/Generic-section/GenericSession"
 
-export function Home() {
+function Home() {
 
   return (
     <>
@@ -11,3 +11,4 @@ export function Home() {
     </>
   )
 }
+export default Home

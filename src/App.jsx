@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import './Styles/App.css';
 
 
-export function App() {
+function App() {
 
   return (
     <>
@@ -10,3 +10,5 @@ export function App() {
     </>
   )
 }
+
+export default App

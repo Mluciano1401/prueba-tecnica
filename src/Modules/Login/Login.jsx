@@ -3,7 +3,7 @@ import '../../Styles/Form.css';
 import * as api from '../../Services/Controllerapi';
 import  { useNavigate } from 'react-router-dom';
 
-export function Login() {
+function Login() {
   const [valid, setValid] = useState({});
 
   const token = sessionStorage.getItem('token');
@@ -44,9 +44,11 @@ export function Login() {
         value={valid.password || ""} onChange={handleChange} required/>
         <button type="submit">Login</button>
         <section>
-          <a></a>
+          <a href='/register'>You do not have an account? Sign up</a>
         </section>
      </form>
     </>
   )
 }
+
+export default Login

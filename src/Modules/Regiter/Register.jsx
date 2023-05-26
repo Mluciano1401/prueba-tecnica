@@ -3,7 +3,7 @@ import * as api from '../../Services/Controllerapi';
 import '../../Styles/Form.css';
 import  {useNavigate } from 'react-router-dom';
 
-export function Register() {
+function Register() {
   const [valid, setValid] = useState({});
   const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ export function Register() {
 
   return (
     <>
-     <form onSubmit={submit} noValidate={true} style={{height:'600px'}}>
+     <form onSubmit={submit} noValidate={true} style={{height:'650px'}}>
         <h1>Register</h1>
         <label>Firstname</label>
         <input type="text" name="firstname"
@@ -52,7 +52,12 @@ export function Register() {
         <input type="password" name="verify_password"
         value={ valid.verify_password || ""} onChange={ handleChange}/>
         <button type="submit">Submit</button>
+        <section>
+          <a href='/'>Do you already have an account? log in</a>
+        </section>
      </form>
     </>
   )
 }
+
+export default Register
