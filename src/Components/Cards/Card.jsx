@@ -1,20 +1,20 @@
-//import { useState } from 'react'
-import './Styles/App.css'
+import '../../Styles/Cards.css'
 
-function Card() {
-
+export function Card({data}) {
   return (
     <>
-     <div>
-        <img/>
-        <h1>{}</h1>
-        <strong>Email:</strong>
-        <span>{}</span>
-        <strong>Company:</strong>
-        <span>{}</span>
+     <div className='card-box'>
+        <h3>{data.firstname + " " + data.lastname}</h3>
+        <section className='wrapper-info-box'>
+          <div className='info-box'>
+            <strong>Email:</strong>
+            <span>{data.email}</span>
+            <strong>Company:</strong>
+            <span>{data.default_company}</span>
+          </div>
+        </section>
+        
      </div>
     </>
   )
 }
-
-export default Card

@@ -1,14 +1,12 @@
-//import { useState } from 'react'
-import Login from './Modules/Login/Login'
-import './Styles/App.css'
+import { Outlet } from 'react-router-dom';
+import './Styles/App.css';
 
-function App() {
+
+export function App() {
 
   return (
     <>
-     <Login></Login>
+     <Outlet></Outlet>
     </>
   )
 }
-
-export default App

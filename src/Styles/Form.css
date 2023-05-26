@@ -1,0 +1,25 @@
+
+form{
+    background-color: rgb(83, 75, 67);
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+label{
+    text-align: left;
+    font-weight: 500;
+}
+input{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+button{
+    margin: 10px;
+}

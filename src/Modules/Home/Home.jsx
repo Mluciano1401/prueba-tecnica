@@ -1,18 +1,13 @@
-//import { useState } from 'react'
-import './Styles/App.css'
+import '../../Styles/Home.css'
+import {GenericSession} from "../../Components/Generic-section/GenericSession"
 
-function GenericSession() {
+export function Home() {
 
   return (
     <>
-     <header>
-
-     </header>
      <main>
         <GenericSession></GenericSession>
      </main>
     </>
   )
 }
-
-export default GenericSession
